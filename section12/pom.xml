@@ -5,20 +5,22 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.wjy</groupId>
-  <artifactId>springmvc</artifactId>
+  <artifactId>section12</artifactId>
   <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>section12</module>
-    </modules>
-    <packaging>pom</packaging>
+  <packaging>war</packaging>
 
-  <name>springmvc Maven Webapp</name>
-  <url>http://www.example.com</url>
+  <parent>
+    <groupId>cn.ucmed.ydyc</groupId>
+    <artifactId>ydyc-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <name>section12 Maven Webapp</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -28,47 +30,16 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
-      <version>5.0.8.RELEASE</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.16.20</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>5.3.2</version>
+      <artifactId>spring-web</artifactId>
+      <version>5.1.9.RELEASE</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>5.0.8.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>5.0.8.RELEASE</version>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version>
-      <scope>provided</scope>
-    </dependency>
-
   </dependencies>
 
   <build>
-    <finalName>springmvc</finalName>
+    <finalName>section12</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
